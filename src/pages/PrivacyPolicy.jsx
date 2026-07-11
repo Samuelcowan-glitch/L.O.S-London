@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom'
-import { ArrowLeft, Leaf } from 'lucide-react'
+import { ArrowLeft } from 'lucide-react'
 
 export default function PrivacyPolicy() {
   return (
@@ -9,15 +9,13 @@ export default function PrivacyPolicy() {
           <ArrowLeft className="h-4 w-4" /> Back to home
         </Link>
         <div className="flex items-center gap-2 mb-8">
-          <span className="h-9 w-9 rounded-full bg-primary flex items-center justify-center">
-            <Leaf className="h-5 w-5 text-white" />
-          </span>
-          <span className="font-display font-bold text-lg">Fern &amp; Flint</span>
+          <img src={`${import.meta.env.BASE_URL}logo/los-mark.svg`} alt="" className="h-9 w-9" />
+          <span className="font-display font-bold text-lg">L.O.S London</span>
         </div>
         <h1 className="font-display font-bold text-4xl sm:text-5xl tracking-tight mb-8">Privacy Policy</h1>
         <div className="space-y-6 text-muted leading-relaxed">
           <p>
-            Fern &amp; Flint respects your privacy. This policy explains what personal
+            L.O.S London respects your privacy. This policy explains what personal
             information we collect through this website and how we use it.
           </p>
           <h2 className="font-display font-bold text-xl text-ink pt-4">What we collect</h2>
@@ -37,7 +35,7 @@ export default function PrivacyPolicy() {
           <p>
             Under UK GDPR you may request a copy of the personal data we hold about you,
             or ask us to correct or delete it, at any time by writing to
-            hello@fernandflint.co.uk.
+            hello@loslondon.co.uk.
           </p>
           <p className="pt-6 text-sm">Last updated: July 2026</p>
         </div>

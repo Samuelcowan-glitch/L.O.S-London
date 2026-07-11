@@ -74,8 +74,8 @@ function Navbar() {
       >
         <div className="flex items-center justify-between gap-6">
           <a href="#home" className="flex items-center gap-2 group">
-            <span className="relative flex h-9 w-9 items-center justify-center rounded-full bg-primary">
-              <Leaf className="h-5 w-5 text-white" strokeWidth={2.4} />
+            <span className="relative flex h-9 w-9 items-center justify-center rounded-full">
+              <img src={`${import.meta.env.BASE_URL}logo/los-mark.svg`} alt="" className="h-9 w-9" />
               <span className="absolute inset-0 rounded-full ring-2 ring-primary/30 group-hover:ring-primary/50 transition" />
             </span>
             <span
@@ -83,7 +83,7 @@ function Navbar() {
                 scrolled ? 'text-ink' : 'text-white'
               } transition-colors`}
             >
-              Fern &amp; Flint
+              L.O.S London
             </span>
           </a>
 
@@ -132,7 +132,7 @@ function Navbar() {
           }`}
         >
           <div className="flex items-center justify-between mb-10">
-            <span className="font-display font-bold text-xl text-ink">Fern &amp; Flint</span>
+            <span className="font-display font-bold text-xl text-ink">L.O.S London</span>
             <button onClick={() => setOpen(false)} className="p-2 rounded-full bg-divider/40">
               <X className="h-5 w-5" />
             </button>
@@ -243,7 +243,7 @@ function Hero() {
           </h1>
 
           <p className="hero-meta mx-auto max-w-xl text-white/75 text-base sm:text-lg mt-8 leading-relaxed">
-            Fern &amp; Flint designs, builds and quietly tends London&rsquo;s most
+            L.O.S London designs, builds and quietly tends London&rsquo;s most
             admired private gardens — from Chelsea townhouses to the homes of
             household names.
             <span className="text-white"> Discretion is part of the service.</span>
@@ -1000,7 +1000,7 @@ function Protocol() {
                   </span>
                 </div>
                 <div className="absolute bottom-4 right-4 font-mono text-[10px] uppercase tracking-widest text-white/70">
-                  {step.num} / Fern &amp; Flint
+                  {step.num} / L.O.S London
                 </div>
               </div>
             </div>
@@ -1045,7 +1045,7 @@ function ServicesGrid() {
           </div>
           <p className="text-white/60 max-w-md text-base leading-relaxed">
             From a Chelsea courtyard to a country-scale estate — designed, built
-            and kept by Fern &amp; Flint. Serving all of London.
+            and kept by L.O.S London. Serving all of London.
           </p>
         </div>
 
@@ -1219,7 +1219,7 @@ function ContactForm() {
                 </span>
               </a>
 
-              <a href="mailto:hello@fernandflint.co.uk" className="lift-on-hover flex items-center gap-4 group">
+              <a href="mailto:hello@loslondon.co.uk" className="lift-on-hover flex items-center gap-4 group">
                 <span className="h-12 w-12 rounded-2xl bg-primary/10 border border-primary/20 flex items-center justify-center group-hover:bg-primary transition">
                   <Mail className="h-5 w-5 text-primary group-hover:text-white" />
                 </span>
@@ -1227,7 +1227,7 @@ function ContactForm() {
                   <span className="block font-mono text-[10px] uppercase tracking-widest text-muted">
                     Write to
                   </span>
-                  <span className="font-display font-semibold text-ink text-lg">hello@fernandflint.co.uk</span>
+                  <span className="font-display font-semibold text-ink text-lg">hello@loslondon.co.uk</span>
                 </span>
               </a>
 
@@ -1406,7 +1406,7 @@ function Footer() {
           </h2>
           <div className="flex flex-col sm:flex-row sm:items-end justify-between mt-8 gap-6">
             <p className="text-white/50 max-w-md">
-              Fern &amp; Flint — designed, built and quietly kept. Serving every
+              L.O.S London — designed, built and quietly kept. Serving every
               corner of London.
             </p>
             <a
@@ -1422,10 +1422,8 @@ function Footer() {
         <div className="grid grid-cols-2 lg:grid-cols-5 gap-10">
           <div className="col-span-2">
             <div className="flex items-center gap-2 mb-4">
-              <span className="h-9 w-9 rounded-full bg-primary flex items-center justify-center">
-                <Leaf className="h-5 w-5 text-white" strokeWidth={2.4} />
-              </span>
-              <span className="font-display font-bold text-lg">Fern &amp; Flint</span>
+              <img src={`${import.meta.env.BASE_URL}logo/los-mark.svg`} alt="" className="h-9 w-9" />
+              <span className="font-display font-bold text-lg">L.O.S London</span>
             </div>
             <p className="text-white/50 text-sm leading-relaxed max-w-xs">
               London landscape studio designing, building and caring for private
@@ -1473,8 +1471,8 @@ function Footer() {
                 </a>
               </li>
               <li>
-                <a href="mailto:hello@fernandflint.co.uk" className="text-white/65 hover:text-primary-light transition text-sm">
-                  hello@fernandflint.co.uk
+                <a href="mailto:hello@loslondon.co.uk" className="text-white/65 hover:text-primary-light transition text-sm">
+                  hello@loslondon.co.uk
                 </a>
               </li>
               <li className="text-white/65 text-sm">London, UK</li>
@@ -1496,7 +1494,7 @@ function Footer() {
           <div className="flex flex-wrap items-center gap-x-6 gap-y-2 text-white/50 text-xs font-mono">
             <Link to="/privacy" className="hover:text-primary-light transition">Privacy</Link>
             <Link to="/terms" className="hover:text-primary-light transition">Terms</Link>
-            <span>© 2026 Fern &amp; Flint</span>
+            <span>© 2026 L.O.S London</span>
           </div>
         </div>
       </div>
