@@ -23,7 +23,7 @@ const SERVICES_FULL = [
   {
     icon: PencilRuler,
     title: 'Garden Design & Build',
-    text: 'Full design-and-build for London townhouses, rooftops and estates — from first sketch to final planting, delivered by one crew.',
+    text: 'Full garden design and build across South West London — townhouses, rooftops and estates, from first sketch to final planting, delivered by one crew.',
   },
   {
     icon: ShieldCheck,
@@ -33,12 +33,12 @@ const SERVICES_FULL = [
   {
     icon: Sprout,
     title: 'Planting Schemes',
-    text: 'Layered, four-season planting designed for London light and clay — borders that photograph as well in February as in June.',
+    text: 'Layered, four-season planting designed for London light and clay — garden borders in Fulham, Clapham and Barnes that photograph as well in February as in June.',
   },
   {
     icon: Fence,
-    title: 'Hard Structures & Stone',
-    text: 'York stone, porcelain, brick and oak. Terraces, walls, pergolas and paths built to outlast the trends.',
+    title: 'Hard Landscaping & Stone',
+    text: 'York stone, porcelain, brick and oak. Hard landscaping — terraces, walls, pergolas and paths — built to outlast the trends.',
   },
   {
     icon: Lightbulb,
@@ -47,8 +47,8 @@ const SERVICES_FULL = [
   },
   {
     icon: Scissors,
-    title: 'Seasonal Maintenance',
-    text: 'Striped lawns, sharp hedges, mulched beds. Scheduled visits keep every garden press-ready all year.',
+    title: 'Garden Maintenance',
+    text: 'Striped lawns, sharp hedges, mulched beds. Scheduled garden maintenance across South West London keeps every garden press-ready all year.',
   },
 ]
 
@@ -231,7 +231,7 @@ function Hero() {
       <div className="relative z-10 flex min-h-[100dvh] flex-col items-center justify-center text-center">
         <div className="px-6 sm:px-10 lg:px-16 max-w-4xl">
           <p className="hero-meta font-mono text-[11px] uppercase tracking-[0.3em] text-white/70 mb-6">
-            Est. 2009 · London
+            Est. 2009 · South West London
           </p>
           <h1 className="font-display font-bold text-white leading-[0.95] tracking-tight">
             <span className="hero-line-1 block text-4xl sm:text-5xl md:text-6xl">
@@ -246,9 +246,10 @@ function Hero() {
           </h1>
 
           <p className="hero-meta mx-auto max-w-xl text-white/75 text-base sm:text-lg mt-8 leading-relaxed">
-            L.O.S London designs, builds and quietly tends London&rsquo;s most
-            admired private gardens — from Chelsea townhouses to the homes of
-            household names.
+            L.O.S London is a garden design and landscaping studio for South
+            West London&rsquo;s most admired private gardens — from Chelsea and
+            Fulham townhouses to Richmond estates and the homes of household
+            names.
             <span className="text-white"> Discretion is part of the service.</span>
           </p>
 
@@ -286,8 +287,8 @@ function Hero() {
 function DesignShuffler() {
   const items = [
     { tag: 'Townhouse', label: 'Chelsea courtyard, York stone & yew', area: '68 m²' },
-    { tag: 'Estate', label: 'Walled kitchen garden, N. London', area: '540 m²' },
-    { tag: 'Rooftop', label: 'Shoreditch roof terrace, wind-hardy', area: '92 m²' },
+    { tag: 'Estate', label: 'Walled kitchen garden, Richmond', area: '540 m²' },
+    { tag: 'Rooftop', label: 'Battersea roof terrace, wind-hardy', area: '92 m²' },
   ]
   const [stack, setStack] = useState(items)
 
@@ -646,7 +647,7 @@ function Features() {
       eyebrow: '01 / Studio',
       heading: 'Design & Build',
       sub: 'Sketch to soil',
-      text: 'Every garden starts on the drawing board. We design for the house, the light and the life lived in it — then our own crew builds it, stone by stone.',
+      text: 'Every garden design starts on the drawing board. We design for the house, the light and the life lived in it — then our own landscaping crew builds it, stone by stone.',
       Component: DesignShuffler,
     },
     {
@@ -778,8 +779,8 @@ function Pillars() {
       title: 'Experience',
       target: 15,
       suffix: '+',
-      label: 'years in London gardens',
-      desc: 'A decade and a half shaping courtyards, terraces and estates across the capital. We know London clay, London light and London planning.',
+      label: 'years designing SW London gardens',
+      desc: 'A decade and a half of garden design and landscaping across South West London — courtyards, terraces and estates. We know London clay, London light and London planning.',
     },
     {
       n: '02',
@@ -787,7 +788,7 @@ function Pillars() {
       target: 120,
       suffix: '+',
       label: 'gardens under our care',
-      desc: 'From window boxes in Notting Hill to multi-acre grounds, over a hundred and twenty gardens are kept by our crews year-round.',
+      desc: 'From courtyards in Chelsea and Fulham to multi-acre grounds in Richmond, over a hundred and twenty gardens are kept by our crews year-round.',
     },
     {
       n: '03',
@@ -919,7 +920,7 @@ function Protocol() {
       tagline: 'We listen first.',
       text: 'A visit, a slow walk round, and a lot of questions. How do you use the space, what should it hide, what should it show off? We survey the soil, the light and the sightlines, then set out a fixed, transparent proposal.',
       image: 'https://images.unsplash.com/photo-1416879595882-3373a0480b5b?auto=format&fit=crop&w=1200&q=80',
-      alt: 'Gardener tending plants in a London garden',
+      alt: 'Garden designer surveying a South West London garden',
       meta: 'Step 1 / Listen',
     },
     {
@@ -928,7 +929,7 @@ function Protocol() {
       tagline: 'Our crew, start to finish.',
       text: 'Planting plans, stone samples and lighting mock-ups before a single spade goes in. Then one dedicated crew builds it — no subcontractor roulette, no surprises, tidy site every evening.',
       image: 'https://images.unsplash.com/photo-1466692476868-aef1dfb1e735?auto=format&fit=crop&w=1200&q=80',
-      alt: 'Layered planting along a garden path',
+      alt: 'Layered planting scheme along a path in a Fulham garden design',
       meta: 'Step 2 / Build',
     },
     {
@@ -937,7 +938,7 @@ function Protocol() {
       tagline: 'We never really leave.',
       text: 'Handover is the beginning, not the end. Scheduled care visits keep the garden at its opening-day best through every season — and you get the same familiar faces at the gate each time.',
       image: 'https://images.unsplash.com/photo-1558904541-efa843a96f01?auto=format&fit=crop&w=1200&q=80',
-      alt: 'Striped lawn and mature borders',
+      alt: 'Striped lawn and mature borders kept by garden maintenance in Wimbledon',
       meta: 'Step 3 / Keep',
     },
   ]
@@ -1047,8 +1048,9 @@ function ServicesGrid() {
             </h2>
           </div>
           <p className="text-white/60 max-w-md text-base leading-relaxed">
-            From a Chelsea courtyard to a country-scale estate — designed, built
-            and kept by L.O.S London. Serving all of London.
+            From a Chelsea courtyard to a Richmond estate — garden design,
+            landscaping and year-round care by L.O.S London, across South West
+            London and beyond.
           </p>
         </div>
 
@@ -1206,7 +1208,8 @@ function ContactForm() {
             </h2>
             <p className="text-muted text-lg mt-6 leading-relaxed max-w-md">
               A few lines and a couple of photos is all it takes. We&rsquo;ll come
-              back within one working day to arrange a visit.
+              back within one working day to arrange a garden design visit,
+              anywhere in South West London.
             </p>
 
             <div className="mt-10 space-y-4">
@@ -1242,7 +1245,7 @@ function ContactForm() {
                   <span className="block font-mono text-[10px] uppercase tracking-widest text-muted">
                     Home turf
                   </span>
-                  <span className="font-display font-semibold text-ink text-lg">All of London</span>
+                  <span className="font-display font-semibold text-ink text-lg">South West London</span>
                 </span>
               </div>
             </div>
@@ -1409,8 +1412,8 @@ function Footer() {
           </h2>
           <div className="flex flex-col sm:flex-row sm:items-end justify-between mt-8 gap-6">
             <p className="text-white/50 max-w-md">
-              L.O.S London — designed, built and quietly kept. Serving every
-              corner of London.
+              L.O.S London — garden design, landscaping and quiet year-round
+              care across South West London.
             </p>
             <a
               href="#contact"
@@ -1429,8 +1432,8 @@ function Footer() {
               <span className="font-display font-bold text-lg">L.O.S London</span>
             </div>
             <p className="text-white/50 text-sm leading-relaxed max-w-xs">
-              London garden design studio, designing, building and caring for
-              private gardens — with the discretion our clients rely on.
+              South West London garden design studio — designing, building and
+              caring for private gardens with the discretion our clients rely on.
             </p>
             <p className="font-mono text-[10px] uppercase tracking-widest text-white/30 mt-6">
               Est. 2009 · London
@@ -1478,12 +1481,22 @@ function Footer() {
                   rafeanderson04@gmail.com
                 </a>
               </li>
-              <li className="text-white/65 text-sm">London, UK</li>
+              <li className="text-white/65 text-sm">South West London, UK</li>
             </ul>
           </div>
         </div>
 
-        <div className="mt-14 pt-8 border-t border-white/10 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-6">
+        <div className="mt-12 pt-8 border-t border-white/10">
+          <p className="font-mono text-[10px] uppercase tracking-[0.2em] text-primary-light mb-3">
+            Garden design &amp; landscaping across South West London
+          </p>
+          <p className="text-white/40 text-sm leading-relaxed">
+            Chelsea · Fulham · Battersea · Clapham · Wandsworth · Putney ·
+            Wimbledon · Barnes · Richmond · Kew · Kensington
+          </p>
+        </div>
+
+        <div className="mt-10 pt-8 border-t border-white/10 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-6">
           <div className="flex items-center gap-2.5">
             <span className="relative flex h-2 w-2">
               <span className="absolute inset-0 rounded-full bg-emerald-400 animate-ping" />
