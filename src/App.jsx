@@ -1265,7 +1265,7 @@ function ContactForm() {
                   tab === 'booking' ? 'bg-primary text-white shadow-lg shadow-primary/30' : 'bg-surface border border-divider text-muted hover:text-ink'
                 }`}
               >
-                Book a visit directly
+                Book a call directly
               </button>
             </div>
 
@@ -1291,10 +1291,9 @@ function ContactForm() {
               ) : (
                 <iframe
                   src="https://api.leadconnectorhq.com/widget/booking/QzhmdKWnlfi6SZHuy748"
-                  style={{ width: '100%', height: '850px', border: 'none', overflow: 'hidden', borderRadius: '8px' }}
-                  scrolling="no"
+                  style={{ width: '100%', height: '1400px', border: 'none', borderRadius: '8px' }}
                   id="QzhmdKWnlfi6SZHuy748_1783968651112"
-                  title="Book a garden design visit"
+                  title="Book a garden design call"
                 />
               )}
             </div>
