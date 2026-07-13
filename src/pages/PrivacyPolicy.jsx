@@ -35,7 +35,7 @@ export default function PrivacyPolicy() {
           <p>
             Under UK GDPR you may request a copy of the personal data we hold about you,
             or ask us to correct or delete it, at any time by writing to
-            hello@loslondon.co.uk.
+            rafeanderson04@gmail.com.
           </p>
           <p className="pt-6 text-sm">Last updated: July 2026</p>
         </div>

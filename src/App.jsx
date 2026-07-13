@@ -258,11 +258,11 @@ function Hero() {
               <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-0.5" />
             </a>
             <a
-              href="tel:+442079460958"
+              href="tel:+447852944415"
               className="lift-on-hover inline-flex items-center justify-center gap-2 bg-white/10 backdrop-blur-md text-white border border-white/20 font-medium px-7 py-4 rounded-full"
             >
               <Phone className="h-4 w-4" />
-              020 7946 0958
+              07852 944415
             </a>
           </div>
         </div>
@@ -1207,7 +1207,7 @@ function ContactForm() {
             </p>
 
             <div className="mt-10 space-y-4">
-              <a href="tel:+442079460958" className="lift-on-hover flex items-center gap-4 group">
+              <a href="tel:+447852944415" className="lift-on-hover flex items-center gap-4 group">
                 <span className="h-12 w-12 rounded-2xl bg-primary/10 border border-primary/20 flex items-center justify-center group-hover:bg-primary transition">
                   <Phone className="h-5 w-5 text-primary group-hover:text-white" />
                 </span>
@@ -1215,11 +1215,11 @@ function ContactForm() {
                   <span className="block font-mono text-[10px] uppercase tracking-widest text-muted">
                     Call directly
                   </span>
-                  <span className="font-display font-semibold text-ink text-lg">020 7946 0958</span>
+                  <span className="font-display font-semibold text-ink text-lg">07852 944415</span>
                 </span>
               </a>
 
-              <a href="mailto:hello@loslondon.co.uk" className="lift-on-hover flex items-center gap-4 group">
+              <a href="mailto:rafeanderson04@gmail.com" className="lift-on-hover flex items-center gap-4 group">
                 <span className="h-12 w-12 rounded-2xl bg-primary/10 border border-primary/20 flex items-center justify-center group-hover:bg-primary transition">
                   <Mail className="h-5 w-5 text-primary group-hover:text-white" />
                 </span>
@@ -1227,7 +1227,7 @@ function ContactForm() {
                   <span className="block font-mono text-[10px] uppercase tracking-widest text-muted">
                     Write to
                   </span>
-                  <span className="font-display font-semibold text-ink text-lg">hello@loslondon.co.uk</span>
+                  <span className="font-display font-semibold text-ink text-lg">rafeanderson04@gmail.com</span>
                 </span>
               </a>
 
@@ -1466,13 +1466,13 @@ function Footer() {
             </p>
             <ul className="space-y-2.5">
               <li>
-                <a href="tel:+442079460958" className="text-white/65 hover:text-primary-light transition text-sm">
-                  020 7946 0958
+                <a href="tel:+447852944415" className="text-white/65 hover:text-primary-light transition text-sm">
+                  07852 944415
                 </a>
               </li>
               <li>
-                <a href="mailto:hello@loslondon.co.uk" className="text-white/65 hover:text-primary-light transition text-sm">
-                  hello@loslondon.co.uk
+                <a href="mailto:rafeanderson04@gmail.com" className="text-white/65 hover:text-primary-light transition text-sm">
+                  rafeanderson04@gmail.com
                 </a>
               </li>
               <li className="text-white/65 text-sm">London, UK</li>
