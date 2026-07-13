@@ -5,7 +5,7 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger'
 import {
   Leaf, Sprout, Fence, Lightbulb, Scissors, PencilRuler,
   ShieldCheck, Award, Clock, Phone, Mail, MapPin,
-  ArrowUpRight, ArrowRight, Menu, X, CheckCircle2, Upload, Lock,
+  ArrowUpRight, ArrowRight, Menu, X, Lock,
 } from 'lucide-react'
 
 gsap.registerPlugin(ScrollTrigger)
@@ -1175,22 +1175,6 @@ function TrustSignals() {
    Contact Form
 ---------------------------------------------------------------- */
 function ContactForm() {
-  const [form, setForm] = useState({ name: '', email: '', phone: '', postcode: '', message: '' })
-  const [files, setFiles] = useState([])
-  const [status, setStatus] = useState('idle') // idle | sending | sent
-  const dropRef = useRef(null)
-
-  const handleSubmit = (e) => {
-    e.preventDefault()
-    if (!form.name || !form.email || !form.message) return
-    setStatus('sending')
-    setTimeout(() => setStatus('sent'), 1200)
-  }
-
-  const handleFiles = (newFiles) => {
-    setFiles((prev) => [...prev, ...Array.from(newFiles)].slice(0, 5))
-  }
-
   return (
     <section id="contact" className="relative py-24 sm:py-32 px-6 sm:px-10 lg:px-16 bg-background">
       <div className="max-w-7xl mx-auto">
@@ -1262,134 +1246,31 @@ function ContactForm() {
             </div>
           </div>
 
-          {/* Right: form */}
+          {/* Right: form — GoHighLevel embed */}
           <div className="lg:col-span-7">
-            <form
-              onSubmit={handleSubmit}
-              className="bg-surface border border-divider rounded-5xl p-7 sm:p-10 shadow-xl shadow-primary/5"
-            >
-              {status !== 'sent' ? (
-                <>
-                  <div className="grid sm:grid-cols-2 gap-5">
-                    <Field label="Name" required value={form.name} onChange={(v) => setForm({ ...form, name: v })} />
-                    <Field label="Email" type="email" required value={form.email} onChange={(v) => setForm({ ...form, email: v })} />
-                    <Field label="Phone" type="tel" value={form.phone} onChange={(v) => setForm({ ...form, phone: v })} />
-                    <Field label="Postcode" value={form.postcode} onChange={(v) => setForm({ ...form, postcode: v })} />
-                  </div>
-
-                  <div className="mt-5">
-                    <label className="font-mono text-[10px] uppercase tracking-[0.2em] text-muted mb-2 block">
-                      Your garden *
-                    </label>
-                    <textarea
-                      value={form.message}
-                      onChange={(e) => setForm({ ...form, message: e.target.value })}
-                      required
-                      rows={5}
-                      placeholder="Tell us a little about the space and what you'd love it to become…"
-                      className="w-full bg-background border border-divider rounded-2xl px-4 py-3.5 text-ink placeholder-muted/60 focus:border-primary focus:ring-4 focus:ring-primary/15 outline-none transition resize-none font-body"
-                    />
-                  </div>
-
-                  {/* File upload zone */}
-                  <div
-                    ref={dropRef}
-                    onDragOver={(e) => {
-                      e.preventDefault()
-                      dropRef.current?.classList.add('!border-primary', '!bg-primary/5')
-                    }}
-                    onDragLeave={() => {
-                      dropRef.current?.classList.remove('!border-primary', '!bg-primary/5')
-                    }}
-                    onDrop={(e) => {
-                      e.preventDefault()
-                      dropRef.current?.classList.remove('!border-primary', '!bg-primary/5')
-                      handleFiles(e.dataTransfer.files)
-                    }}
-                    className="mt-5 border-2 border-dashed border-divider rounded-3xl p-6 text-center hover:border-primary/50 transition-colors cursor-pointer"
-                  >
-                    <input
-                      type="file"
-                      multiple
-                      id="file-up"
-                      className="hidden"
-                      onChange={(e) => handleFiles(e.target.files)}
-                      accept="image/*"
-                    />
-                    <label htmlFor="file-up" className="cursor-pointer block">
-                      <Upload className="h-6 w-6 mx-auto text-primary-dark mb-2" />
-                      <p className="font-display font-semibold text-ink text-sm">
-                        Attach photos of your garden
-                      </p>
-                      <p className="text-xs text-muted mt-1">
-                        Click or drag files here (up to 5 photos)
-                      </p>
-                      {files.length > 0 && (
-                        <div className="mt-4 flex flex-wrap gap-2 justify-center">
-                          {files.map((f, i) => (
-                            <span
-                              key={i}
-                              className="inline-flex items-center gap-1.5 bg-primary/10 text-primary-dark text-xs px-3 py-1.5 rounded-full font-mono"
-                            >
-                              <CheckCircle2 className="h-3 w-3" />
-                              {f.name.length > 22 ? f.name.slice(0, 22) + '…' : f.name}
-                            </span>
-                          ))}
-                        </div>
-                      )}
-                    </label>
-                  </div>
-
-                  <div className="mt-7 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
-                    <p className="text-xs text-muted">
-                      We reply within one working day. Fields marked * are required.
-                    </p>
-                    <button
-                      type="submit"
-                      disabled={status === 'sending'}
-                      className="magnetic-btn inline-flex items-center gap-2 bg-primary text-white font-semibold px-7 py-3.5 rounded-full shadow-lg shadow-primary/30 disabled:opacity-50"
-                    >
-                      {status === 'sending' ? 'Sending…' : 'Send enquiry'}
-                      <ArrowRight className="h-4 w-4" />
-                    </button>
-                  </div>
-                </>
-              ) : (
-                <div className="text-center py-12">
-                  <div className="h-16 w-16 mx-auto rounded-full bg-primary/15 flex items-center justify-center mb-6">
-                    <CheckCircle2 className="h-8 w-8 text-primary-dark" />
-                  </div>
-                  <h3 className="font-display font-bold text-2xl text-ink mb-3">
-                    Thank you — message received
-                  </h3>
-                  <p className="text-muted max-w-md mx-auto">
-                    We&rsquo;ll be in touch within one working day to arrange a
-                    visit and talk through your garden.
-                  </p>
-                </div>
-              )}
-            </form>
+            <div className="bg-surface border border-divider rounded-5xl p-3 sm:p-4 shadow-xl shadow-primary/5 overflow-hidden">
+              <iframe
+                src="https://api.leadconnectorhq.com/widget/form/jOMj6uoBjXM0vIf5rnZZ"
+                style={{ width: '100%', height: '1133px', border: 'none', borderRadius: '8px' }}
+                id="inline-jOMj6uoBjXM0vIf5rnZZ"
+                data-layout="{'id':'INLINE'}"
+                data-trigger-type="alwaysShow"
+                data-trigger-value=""
+                data-activation-type="alwaysActivated"
+                data-activation-value=""
+                data-deactivation-type="neverDeactivate"
+                data-deactivation-value=""
+                data-form-name="Form 3"
+                data-height="1133"
+                data-layout-iframe-id="inline-jOMj6uoBjXM0vIf5rnZZ"
+                data-form-id="jOMj6uoBjXM0vIf5rnZZ"
+                title="Contact enquiry form"
+              />
+            </div>
           </div>
         </div>
       </div>
     </section>
-  )
-}
-
-function Field({ label, type = 'text', required, value, onChange }) {
-  return (
-    <div>
-      <label className="font-mono text-[10px] uppercase tracking-[0.2em] text-muted mb-2 block">
-        {label} {required && '*'}
-      </label>
-      <input
-        type={type}
-        required={required}
-        value={value}
-        onChange={(e) => onChange(e.target.value)}
-        className="w-full bg-background border border-divider rounded-2xl px-4 py-3.5 text-ink placeholder-muted/60 focus:border-primary focus:ring-4 focus:ring-primary/15 outline-none transition font-body"
-      />
-    </div>
   )
 }
 
