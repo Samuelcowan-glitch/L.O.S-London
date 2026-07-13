@@ -231,7 +231,7 @@ function Hero() {
       <div className="relative z-10 flex min-h-[100dvh] flex-col items-center justify-center text-center">
         <div className="px-6 sm:px-10 lg:px-16 max-w-4xl">
           <p className="hero-meta font-mono text-[11px] uppercase tracking-[0.3em] text-white/70 mb-6">
-            Est. 2009 · South West London
+            Est. 2004 · South West London
           </p>
           <h1 className="font-display font-bold text-white leading-[0.95] tracking-tight">
             <span className="hero-line-1 block text-4xl sm:text-5xl md:text-6xl">
@@ -777,10 +777,10 @@ function Pillars() {
     {
       n: '01',
       title: 'Experience',
-      target: 15,
+      target: 19,
       suffix: '+',
       label: 'years designing SW London gardens',
-      desc: 'A decade and a half of garden design and landscaping across South West London — courtyards, terraces and estates. We know London clay, London light and London planning.',
+      desc: 'Just under two decades of garden design across South West London — courtyards, terraces and estates. We know London clay, London light and London planning.',
     },
     {
       n: '02',
@@ -1175,6 +1175,8 @@ function TrustSignals() {
    Contact Form
 ---------------------------------------------------------------- */
 function ContactForm() {
+  const [tab, setTab] = useState('enquiry') // 'enquiry' | 'booking'
+
   return (
     <section id="contact" className="relative py-24 sm:py-32 px-6 sm:px-10 lg:px-16 bg-background">
       <div className="max-w-7xl mx-auto">
@@ -1246,26 +1248,55 @@ function ContactForm() {
             </div>
           </div>
 
-          {/* Right: form — GoHighLevel embed */}
+          {/* Right: GoHighLevel embeds — enquiry form or booking calendar */}
           <div className="lg:col-span-7">
+            <div className="flex gap-2 mb-4">
+              <button
+                onClick={() => setTab('enquiry')}
+                className={`px-5 py-2.5 rounded-full text-sm font-semibold transition ${
+                  tab === 'enquiry' ? 'bg-primary text-white shadow-lg shadow-primary/30' : 'bg-surface border border-divider text-muted hover:text-ink'
+                }`}
+              >
+                Send an enquiry
+              </button>
+              <button
+                onClick={() => setTab('booking')}
+                className={`px-5 py-2.5 rounded-full text-sm font-semibold transition ${
+                  tab === 'booking' ? 'bg-primary text-white shadow-lg shadow-primary/30' : 'bg-surface border border-divider text-muted hover:text-ink'
+                }`}
+              >
+                Book a visit directly
+              </button>
+            </div>
+
             <div className="bg-surface border border-divider rounded-5xl p-3 sm:p-4 shadow-xl shadow-primary/5 overflow-hidden">
-              <iframe
-                src="https://api.leadconnectorhq.com/widget/form/jOMj6uoBjXM0vIf5rnZZ"
-                style={{ width: '100%', height: '1133px', border: 'none', borderRadius: '8px' }}
-                id="inline-jOMj6uoBjXM0vIf5rnZZ"
-                data-layout="{'id':'INLINE'}"
-                data-trigger-type="alwaysShow"
-                data-trigger-value=""
-                data-activation-type="alwaysActivated"
-                data-activation-value=""
-                data-deactivation-type="neverDeactivate"
-                data-deactivation-value=""
-                data-form-name="Form 3"
-                data-height="1133"
-                data-layout-iframe-id="inline-jOMj6uoBjXM0vIf5rnZZ"
-                data-form-id="jOMj6uoBjXM0vIf5rnZZ"
-                title="Contact enquiry form"
-              />
+              {tab === 'enquiry' ? (
+                <iframe
+                  src="https://api.leadconnectorhq.com/widget/form/jOMj6uoBjXM0vIf5rnZZ"
+                  style={{ width: '100%', height: '1133px', border: 'none', borderRadius: '8px' }}
+                  id="inline-jOMj6uoBjXM0vIf5rnZZ"
+                  data-layout="{'id':'INLINE'}"
+                  data-trigger-type="alwaysShow"
+                  data-trigger-value=""
+                  data-activation-type="alwaysActivated"
+                  data-activation-value=""
+                  data-deactivation-type="neverDeactivate"
+                  data-deactivation-value=""
+                  data-form-name="Form 3"
+                  data-height="1133"
+                  data-layout-iframe-id="inline-jOMj6uoBjXM0vIf5rnZZ"
+                  data-form-id="jOMj6uoBjXM0vIf5rnZZ"
+                  title="Contact enquiry form"
+                />
+              ) : (
+                <iframe
+                  src="https://api.leadconnectorhq.com/widget/booking/QzhmdKWnlfi6SZHuy748"
+                  style={{ width: '100%', height: '850px', border: 'none', overflow: 'hidden', borderRadius: '8px' }}
+                  scrolling="no"
+                  id="QzhmdKWnlfi6SZHuy748_1783968651112"
+                  title="Book a garden design visit"
+                />
+              )}
             </div>
           </div>
         </div>
@@ -1317,7 +1348,7 @@ function Footer() {
               caring for private gardens with the discretion our clients rely on.
             </p>
             <p className="font-mono text-[10px] uppercase tracking-widest text-white/30 mt-6">
-              Est. 2009 · London
+              Est. 2004 · London
             </p>
           </div>
 
