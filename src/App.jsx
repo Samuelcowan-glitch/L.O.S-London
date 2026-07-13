@@ -1132,7 +1132,7 @@ function TrustSignals() {
               visible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'
             }`}
           >
-            Simon Cowell &nbsp;·&nbsp; Stormzy &nbsp;·&nbsp; and the homes we&rsquo;ll never name.
+            Household names in music and television &mdash; and the homes we&rsquo;ll never name.
           </p>
         </div>
 
