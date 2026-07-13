@@ -37,8 +37,8 @@ const SERVICES_FULL = [
   },
   {
     icon: Fence,
-    title: 'Hard Landscaping & Stone',
-    text: 'York stone, porcelain, brick and oak. Hard landscaping — terraces, walls, pergolas and paths — built to outlast the trends.',
+    title: 'Garden Design Consultancy',
+    text: "A garden designer’s eye on your space — layout, proportion and planting advice for homeowners planning their own project.",
   },
   {
     icon: Lightbulb,
@@ -246,8 +246,8 @@ function Hero() {
           </h1>
 
           <p className="hero-meta mx-auto max-w-xl text-white/75 text-base sm:text-lg mt-8 leading-relaxed">
-            L.O.S London is a garden design and landscaping studio for South
-            West London&rsquo;s most admired private gardens — from Chelsea and
+            L.O.S London is a studio of garden designers for South West
+            London&rsquo;s most admired private gardens — from Chelsea and
             Fulham townhouses to Richmond estates and the homes of household
             names.
             <span className="text-white"> Discretion is part of the service.</span>
@@ -1432,7 +1432,7 @@ function Footer() {
               <span className="font-display font-bold text-lg">L.O.S London</span>
             </div>
             <p className="text-white/50 text-sm leading-relaxed max-w-xs">
-              South West London garden design studio — designing, building and
+              South West London garden designers — designing, building and
               caring for private gardens with the discretion our clients rely on.
             </p>
             <p className="font-mono text-[10px] uppercase tracking-widest text-white/30 mt-6">
