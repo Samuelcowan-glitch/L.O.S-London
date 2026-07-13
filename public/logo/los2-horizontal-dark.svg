@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 200">
+  <!-- Icon, detailed, left — inverted for dark grounds -->
+  <g transform="translate(10,20) scale(0.8)">
+    <path d="M8 150 C 55 175, 110 60, 190 95 L190 118 C 115 92, 60 195, 8 168 Z" fill="#F7F6F2" fill-opacity="0.12"/>
+    <rect x="30" y="30" width="120" height="120" fill="none" stroke="#F7F6F2" stroke-width="2.6"/>
+    <rect x="68" y="10" width="82" height="82" fill="none" stroke="#F7F6F2" stroke-width="2"/>
+    <rect x="20" y="118" width="120" height="52" fill="none" stroke="#F7F6F2" stroke-width="2"/>
+    <line x1="156" y1="46" x2="156" y2="140" stroke="#F7F6F2" stroke-width="1.6"/>
+    <line x1="164" y1="46" x2="164" y2="140" stroke="#F7F6F2" stroke-width="1.6"/>
+  </g>
+
+  <!-- Wordmark -->
+  <text x="200" y="108" font-family="Futura, 'Century Gothic', 'Avenir Next', -apple-system, sans-serif"
+        font-weight="700" font-size="54" letter-spacing="2" fill="#F7F6F2">L.O.S LONDON</text>
+
+  <line x1="203" y1="128" x2="700" y2="128" stroke="#F7F6F2" stroke-opacity="0.3" stroke-width="1"/>
+
+  <text x="203" y="152" font-family="Futura, 'Century Gothic', 'Avenir Next', -apple-system, sans-serif"
+        font-weight="400" font-size="16" letter-spacing="6" fill="#C9C6BC">LUXURY . OUTDOOR . SPACES</text>
+</svg>

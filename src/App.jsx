@@ -74,9 +74,12 @@ function Navbar() {
       >
         <div className="flex items-center justify-between gap-6">
           <a href="#home" className="flex items-center gap-2 group">
-            <span className="relative flex h-9 w-9 items-center justify-center rounded-full">
-              <img src={`${import.meta.env.BASE_URL}logo/los-mark.svg`} alt="" className="h-9 w-9" />
-              <span className="absolute inset-0 rounded-full ring-2 ring-primary/30 group-hover:ring-primary/50 transition" />
+            <span className="flex h-8 w-8 items-center justify-center opacity-90 group-hover:opacity-100 transition">
+              <img
+                src={`${import.meta.env.BASE_URL}logo/${scrolled ? 'los2-icon.svg' : 'los2-icon-dark.svg'}`}
+                alt=""
+                className="h-8 w-8"
+              />
             </span>
             <span
               className={`font-display font-bold tracking-tight text-lg ${
@@ -1422,7 +1425,7 @@ function Footer() {
         <div className="grid grid-cols-2 lg:grid-cols-5 gap-10">
           <div className="col-span-2">
             <div className="flex items-center gap-2 mb-4">
-              <img src={`${import.meta.env.BASE_URL}logo/los-mark.svg`} alt="" className="h-9 w-9" />
+              <img src={`${import.meta.env.BASE_URL}logo/los2-icon-dark.svg`} alt="" className="h-8 w-8" />
               <span className="font-display font-bold text-lg">L.O.S London</span>
             </div>
             <p className="text-white/50 text-sm leading-relaxed max-w-xs">
