@@ -37,7 +37,7 @@ const SERVICES_FULL = [
   },
   {
     icon: Fence,
-    title: 'Hard Landscaping & Stone',
+    title: 'Hard Structures & Stone',
     text: 'York stone, porcelain, brick and oak. Terraces, walls, pergolas and paths built to outlast the trends.',
   },
   {
@@ -1426,8 +1426,8 @@ function Footer() {
               <span className="font-display font-bold text-lg">L.O.S London</span>
             </div>
             <p className="text-white/50 text-sm leading-relaxed max-w-xs">
-              London landscape studio designing, building and caring for private
-              gardens — with the discretion our clients rely on.
+              London garden design studio, designing, building and caring for
+              private gardens — with the discretion our clients rely on.
             </p>
             <p className="font-mono text-[10px] uppercase tracking-widest text-white/30 mt-6">
               Est. 2009 · London
