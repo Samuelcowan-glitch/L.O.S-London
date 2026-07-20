@@ -76,7 +76,7 @@ function Navbar() {
           <a href="#home" className="flex items-center gap-2 group">
             <span className="flex h-8 w-8 items-center justify-center opacity-90 group-hover:opacity-100 transition">
               <img
-                src={`${import.meta.env.BASE_URL}logo/${scrolled ? 'los2-icon.svg' : 'los2-icon-dark.svg'}`}
+                src={`${import.meta.env.BASE_URL}logo/${scrolled ? 'da-icon.svg' : 'da-icon-dark.svg'}`}
                 alt=""
                 className="h-8 w-8"
               />
@@ -86,7 +86,7 @@ function Navbar() {
                 scrolled ? 'text-ink' : 'text-white'
               } transition-colors`}
             >
-              L.O.S London
+              Drummond Anderson
             </span>
           </a>
 
@@ -135,7 +135,7 @@ function Navbar() {
           }`}
         >
           <div className="flex items-center justify-between mb-10">
-            <span className="font-display font-bold text-xl text-ink">L.O.S London</span>
+            <span className="font-display font-bold text-xl text-ink">Drummond Anderson</span>
             <button onClick={() => setOpen(false)} className="p-2 rounded-full bg-divider/40">
               <X className="h-5 w-5" />
             </button>
@@ -246,7 +246,7 @@ function Hero() {
           </h1>
 
           <p className="hero-meta mx-auto max-w-xl text-white/75 text-base sm:text-lg mt-8 leading-relaxed">
-            L.O.S London is a studio of garden designers for South West
+            Drummond Anderson is a studio of garden designers for South West
             London&rsquo;s most admired private gardens — from Chelsea and
             Fulham townhouses to Richmond estates and the homes of household
             names.
@@ -1004,7 +1004,7 @@ function Protocol() {
                   </span>
                 </div>
                 <div className="absolute bottom-4 right-4 font-mono text-[10px] uppercase tracking-widest text-white/70">
-                  {step.num} / L.O.S London
+                  {step.num} / Drummond Anderson
                 </div>
               </div>
             </div>
@@ -1049,7 +1049,7 @@ function ServicesGrid() {
           </div>
           <p className="text-white/60 max-w-md text-base leading-relaxed">
             From a Chelsea courtyard to a Richmond estate — garden design,
-            landscaping and year-round care by L.O.S London, across South West
+            landscaping and year-round care by Drummond Anderson, across South West
             London and beyond.
           </p>
         </div>
@@ -1323,7 +1323,7 @@ function Footer() {
           </h2>
           <div className="flex flex-col sm:flex-row sm:items-end justify-between mt-8 gap-6">
             <p className="text-white/50 max-w-md">
-              L.O.S London — garden design, landscaping and quiet year-round
+              Drummond Anderson Garden Design &amp; Maintenance — garden design, landscaping and quiet year-round
               care across South West London.
             </p>
             <a
@@ -1339,8 +1339,8 @@ function Footer() {
         <div className="grid grid-cols-2 lg:grid-cols-5 gap-10">
           <div className="col-span-2">
             <div className="flex items-center gap-2 mb-4">
-              <img src={`${import.meta.env.BASE_URL}logo/los2-icon-dark.svg`} alt="" className="h-8 w-8" />
-              <span className="font-display font-bold text-lg">L.O.S London</span>
+              <img src={`${import.meta.env.BASE_URL}logo/da-icon-dark.svg`} alt="" className="h-8 w-8" />
+              <span className="font-display font-bold text-lg">Drummond Anderson</span>
             </div>
             <p className="text-white/50 text-sm leading-relaxed max-w-xs">
               South West London garden designers — designing, building and
@@ -1421,7 +1421,7 @@ function Footer() {
           <div className="flex flex-wrap items-center gap-x-6 gap-y-2 text-white/50 text-xs font-mono">
             <Link to="/privacy" className="hover:text-primary-light transition">Privacy</Link>
             <Link to="/terms" className="hover:text-primary-light transition">Terms</Link>
-            <span>© 2026 L.O.S London</span>
+            <span>© 2026 Drummond Anderson Garden Design &amp; Maintenance</span>
           </div>
         </div>
       </div>

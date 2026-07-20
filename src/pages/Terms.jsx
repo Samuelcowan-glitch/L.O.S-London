@@ -9,8 +9,8 @@ export default function Terms() {
           <ArrowLeft className="h-4 w-4" /> Back to home
         </Link>
         <div className="flex items-center gap-2 mb-8">
-          <img src={`${import.meta.env.BASE_URL}logo/los2-icon.svg`} alt="" className="h-8 w-8" />
-          <span className="font-display font-bold text-lg">L.O.S London</span>
+          <img src={`${import.meta.env.BASE_URL}logo/da-icon.svg`} alt="" className="h-8 w-8" />
+          <span className="font-display font-bold text-lg">Drummond Anderson</span>
         </div>
         <h1 className="font-display font-bold text-4xl sm:text-5xl tracking-tight mb-8">Terms of Service</h1>
         <div className="space-y-6 text-muted leading-relaxed">
@@ -22,7 +22,7 @@ export default function Terms() {
           <h2 className="font-display font-bold text-xl text-ink pt-4">Work &amp; materials</h2>
           <p>
             All work is carried out by our own employed crews to the specification agreed
-            in writing. Materials remain the property of L.O.S London until paid for
+            in writing. Materials remain the property of Drummond Anderson Garden Design &amp; Maintenance until paid for
             in full. Living plants are guaranteed for one growing season when under our
             maintenance care.
           </p>
