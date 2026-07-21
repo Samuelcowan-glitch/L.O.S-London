@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 200" role="img" aria-label="L.O.S London — landscape studio">
+  <!-- Leaf mark -->
+  <g transform="translate(88,86)">
+    <circle r="52" fill="#1F4530"/>
+    <circle r="51" fill="none" stroke="#C6A15B" stroke-width="1" stroke-opacity="0.5"/>
+    <g transform="translate(0,2)">
+      <path d="M0 -26 C 18 -15, 25 2, 20 22 C 2 27, -15 19, -20 0 C -17 -13, -10 -21, 0 -26 Z"
+            fill="#F7F6F2" fill-opacity="0.95"/>
+      <path d="M-12 17 C -5 6, 5 -6, 15 -18" stroke="#1F4530" stroke-width="2.6" stroke-linecap="round" fill="none"/>
+    </g>
+  </g>
+
+  <!-- Wordmark -->
+  <text x="170" y="104" font-family="Georgia, 'Times New Roman', serif" font-size="76" letter-spacing="3"
+        fill="#1F4530">L.O.S</text>
+  <text x="174" y="140" font-family="Georgia, 'Times New Roman', serif" font-size="24" letter-spacing="13"
+        fill="#A88441">LONDON</text>
+
+  <!-- Rule + descriptor -->
+  <line x1="174" y1="158" x2="560" y2="158" stroke="#C6A15B" stroke-width="1" stroke-opacity="0.55"/>
+  <text x="174" y="180" font-family="Georgia, 'Times New Roman', serif" font-size="13" letter-spacing="5"
+        fill="#5F6B62">LANDSCAPE · DESIGN · CARE</text>
+</svg>
