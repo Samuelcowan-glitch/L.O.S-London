@@ -9,7 +9,7 @@ export default function Terms() {
           <ArrowLeft className="h-4 w-4" /> Back to home
         </Link>
         <div className="flex items-center gap-2 mb-8">
-          <img src={`${import.meta.env.BASE_URL}logo/da-icon.svg`} alt="" className="h-8 w-8" />
+          <img src={`${import.meta.env.BASE_URL}logo/dna-badge.png`} alt="DNA Gardens" className="h-9 w-9 rounded-md" />
           <span className="font-display font-bold text-lg">Drummond Anderson</span>
         </div>
         <h1 className="font-display font-bold text-4xl sm:text-5xl tracking-tight mb-8">Terms of Service</h1>
