@@ -235,13 +235,13 @@ function Hero() {
           </p>
           <h1 className="font-display font-bold text-white leading-[0.95] tracking-tight">
             <span className="hero-line-1 block text-4xl sm:text-5xl md:text-6xl">
-              Gardens worthy of
+              Bespoke design
             </span>
             <span
               className="hero-line-2 block font-serif italic font-medium text-accent text-6xl sm:text-7xl md:text-8xl lg:text-9xl mt-2"
               style={{ lineHeight: '0.92' }}
             >
-              the spotlight.
+              tailored to you.
             </span>
           </h1>
 
@@ -1316,9 +1316,9 @@ function Footer() {
       <div className="relative px-6 sm:px-10 lg:px-16 pt-20 pb-10 max-w-7xl mx-auto">
         <div className="border-b border-white/10 pb-12 mb-12">
           <h2 className="font-display font-bold text-5xl sm:text-7xl md:text-8xl leading-[0.92] tracking-tight">
-            Gardens worthy of
+            Bespoke design
             <span className="font-serif italic font-medium text-accent block">
-              the spotlight.
+              tailored to you.
             </span>
           </h2>
           <div className="flex flex-col sm:flex-row sm:items-end justify-between mt-8 gap-6">
@@ -1448,10 +1448,10 @@ export default function App() {
       <Navbar />
       <main>
         <Hero />
-        <Features />
-        <Pillars />
         <Protocol />
         <ServicesGrid />
+        <Features />
+        <Pillars />
         <TrustSignals />
         <ContactForm />
       </main>
